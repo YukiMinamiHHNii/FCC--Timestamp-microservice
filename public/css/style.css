@@ -18,6 +18,10 @@ html {
 	background-color: var(--color-main);
 }
 
+a{
+	color: var(--pad-btn-active);
+}
+
 *,
 *:after,
 *:before {

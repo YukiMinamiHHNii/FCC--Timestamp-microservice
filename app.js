@@ -1,12 +1,11 @@
-const express= require('express'),
-			dotenv= require('dotenv').load();
-const app= express();
+const express = require("express"),
+			dotenv = require("dotenv").load(),
+			timestampRouter = require("./src/routers/timestamp");
+const app = express();
 
-app.use(express.static(__dirname + '/public')); 
-
-app.get('/', (req, res)=>{
-	res.sendFile(__dirname+'/views/index.html');
-});
+app.use(express.static(__dirname + "/public"));
+app.use("/", express.static(__dirname + "/views"));
+app.use("/api/timestamp", timestampRouter);
 
 app.listen(process.env.SERVER_PORT);
 
