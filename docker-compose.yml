@@ -1,0 +1,8 @@
+version: "3"
+services:
+  timestamp:
+    image: timestamp
+    container_name: timestamp
+    restart: always
+    ports:
+      - 3002:3000
