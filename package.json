@@ -4,7 +4,7 @@
   "description": "Timestamp microservice for FreeCodeCamp API Certification",
   "main": "app.js",
   "scripts": {
-    "start": "node app.js"
+    "start": "nodemon app.js"
   },
   "author": "YukiMinamiHHNii",
   "license": "GPL-3.0",
